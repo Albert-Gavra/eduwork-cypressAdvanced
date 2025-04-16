@@ -1,0 +1,44 @@
+[
+    {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "firstName": "Budi",
+        "lastName": "Amazing",
+        "Zip": "62362"
+    },
+    {
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "firstName": "Ari",
+        "lastName": "Testing",
+        "Zip": "192783"
+    },
+    {
+        "username": "problem_user",
+        "password": "secret_sauce",
+        "firstName": "Herry",
+        "lastName": "Well",
+        "Zip": "32167"
+    },
+    {
+        "username": "performance_glitch_user",
+        "password": "secret_sauce",
+        "firstName": "Clark",
+        "lastName": "Kent",
+        "Zip": "12345"
+    },
+    {
+        "username": "error_user",
+        "password": "secret_sauce",
+        "firstName": "Barry",
+        "lastName": "Allen",
+        "Zip": "42345"
+    },
+    {
+        "username": "visual_user",
+        "password": "secret_sauce",
+        "firstName": "Jenny",
+        "lastName": "James",
+        "Zip": "13245"
+    }
+]

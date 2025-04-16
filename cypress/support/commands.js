@@ -39,3 +39,15 @@ Cypress.Commands.add('logout',  () => {
     cy.contains('username').click()
     cy.get('#logout_link').click()
 } );
+
+Cypress.Commands.add('loginSauce',  (username, password) => {
+    cy.clearCookies()
+    cy.clearLocalStorage()
+    cy.get('#user-name').clear()
+    cy.get('#user-name').type(username)
+
+    cy.get('input[name="password"]').clear()
+    cy.get('input[name="password"]').type(password)
+
+    cy.get('input[name="login-button"]').click()
+} );
