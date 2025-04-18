@@ -5,6 +5,18 @@ describe('Test all features of SauceDemo web', () => {
         cy.visit('https://www.saucedemo.com')
     });
     
+    it('Testing locked_out_user, should show error message about the user', () => {
+        cy.fixture("sauceDemo").then(user => {
+            const user2 = user[1]
+            const username = user2.username
+            const password = user2.password
+
+            cy.loginSauce(username, password)
+
+            cy.get('h3').should('contain.text', 'Epic sadface: Sorry, this user has been locked out.')
+        })
+    });
+
     it('Testing login screen, should arrive at home screen', () => {
         cy.fixture("sauceDemo").then(user => {
             const user1 = user[0]
